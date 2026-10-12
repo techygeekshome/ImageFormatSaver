@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "Image Format Saver: Save Image as JPG, PNG or WebP",
+  "short_name": "Image Format Saver",
+  "version": "1.0.0",
+  "description": "Right-click any picture to save it as JPG, PNG or WebP, or copy it as PNG. Converted on your computer. Free, private, no tracking.",
+  "permissions": [
+    "contextMenus",
+    "downloads",
+    "storage",
+    "activeTab",
+    "scripting",
+    "offscreen"
+  ],
+  "optional_host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Image Format Saver options",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "homepage_url": "https://techygeekshome.info/browser-extensions/image-format-saver/",
+  "minimum_chrome_version": "116"
+}

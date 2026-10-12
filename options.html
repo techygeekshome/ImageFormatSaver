@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Image Format Saver options</title><link rel="stylesheet" href="options.css"></head>
+<body>
+<header>
+  <div class="brand"><img src="icons/icon48.png" alt="" width="28" height="28"> Image Format Saver</div>
+  <h1>Options</h1>
+  <p class="muted">Right-click any picture and pick <b>Save image as JPG, PNG or WebP</b>, then the format you want. Or pick <b>Copy as PNG</b>.</p>
+</header>
+<main>
+  <section class="card">
+    <label for="q" class="row"><span><b>Quality for JPG and WebP</b><br><span class="muted">Higher looks better but makes bigger files. The default is 92. PNG is always full quality.</span></span>
+      <output id="qv">92</output></label>
+    <input type="range" id="q" min="50" max="100" step="1" value="92">
+    <div class="ticks"><span>50</span><span>100</span></div>
+  </section>
+  <section class="card">
+    <label class="row tog"><span><b>Ask where to save each file</b><br><span class="muted">Off: files go straight to your Downloads folder.</span></span>
+      <input type="checkbox" id="saveAs"></label>
+  </section>
+  <section class="card">
+    <div class="row"><span><b>Pictures from other sites</b><br><span class="muted" id="hostText">Some sites keep their pictures on a separate server that blocks other apps from reading them. If a picture will not convert, allow this. You can turn it off again here.</span></span>
+      <button id="host" class="ghost">Allow</button></div>
+  </section>
+  <p class="saved muted" id="saved" aria-live="polite"></p>
+  <section class="note">
+    <b>Private by design.</b> Pictures are converted on your computer. Image Format Saver has no account, no analytics and sends nothing anywhere.
+    It only reads a picture when you right-click it and choose an option.
+  </section>
+  <p class="foot muted">Made by <a href="https://techygeekshome.info/browser-extensions/image-format-saver/" target="_blank" rel="noopener">TechyGeeksHome</a>. Free and open source (GPL-3.0).</p>
+</main>
+<script src="options.js"></script>
+</body></html>
